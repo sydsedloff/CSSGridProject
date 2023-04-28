@@ -1,0 +1,123 @@
+/*import css*/
+@import "normalise.css";
+
+/*GRIDS*/
+
+/*small screen. 1 column*/
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(158, 158, 158);
+  }
+}
+
+/*medium screen. 2 columns*/
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgb(158, 158, 158);
+  }
+  .short45 {
+    padding-top: 25%;
+  }
+  .smallHorse {
+    padding-top: 40%;
+  }
+}
+
+/*big screen. 4 column*/
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgb(158, 158, 158);
+  }
+  .short45 {
+    padding-top: 25%;
+  }
+
+  .smallHorse {
+    padding-top: 40%;
+  }
+}
+
+/*grid items*/
+.grid-item {
+  padding: 10%;
+  align-items: center;
+  vertical-align: auto;
+}
+
+/*image size control*/
+img {
+  max-width: 100%;
+  max-height: min-content;
+}
+
+/*main header*/
+h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: xxx-large;
+  border-bottom: 3px solid rgb(158, 158, 158);
+}
+
+/*sections*/
+
+/*small screen text control*/
+@media screen and (max-width: 600px) {
+  h2 {
+    padding-top: 0%;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(94, 94, 94);
+  }
+}
+
+/*medium screen text control*/
+@media screen and (min-width: 600px) {
+  h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(94, 94, 94);
+  }
+}
+
+/*large screen image */
+@media screen and (max-width: 600px) {
+  .short45 {
+    padding-top: auto;
+  }
+  .smallHorse {
+    padding-top: auto;
+  }
+}
+
+/*about me paragraph format*/
+.paraAbout {
+  font-size: larger;
+  text-align: center;
+  padding: 40px;
+  margin-right: 175px;
+  margin-left: 175px;
+  border: solid rgba(158, 158, 158, 0.5);
+  margin-bottom: 50px;
+}
+
+/*contact button at bottom. doesn't have link*/
+.button {
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+}
